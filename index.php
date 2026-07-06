@@ -562,5 +562,104 @@
 </section>
 
 
+<section class="strip-slider swiper">
+    <h1 class="section__heading">Our Authors</h1>
+
+    <div class="swiper-wrapper">
+        <article class="author swiper-slide">
+            <div class="author__img--container">
+                <a class="author__link" href="#"><img class="author__img" src="<?php echo get_theme_file_uri(); ?>/assets/images/author-image-ai-generated-by-me.webp" alt=""></a>
+            </div>
+            <div class="author__content--container">
+                <div>
+                    <p class="author__full-name "><a class="author__link" href="#">Alberto Jalapino</a></p>
+                    <p class="author__role">Associate Editor</p>
+                    <p class="author__publishings">Published : <span class="author__publishings-nums">150</span> articles</p>
+                </div>
+            </div>
+        </article>
+        <article class="author swiper-slide">
+            <div class="author__img--container">
+                <a class="author__link" href="#"><img class="author__img" src="<?php echo get_theme_file_uri(); ?>/assets/images/author-image-ai-generated-by-me.webp" alt=""></a>
+            </div>
+            <div class="author__content--container">
+                <div>
+                    <p class="author__full-name "><a class="author__link" href="#">Alberto Jalapino</a></p>
+                    <p class="author__role">Associate Editor</p>
+                    <p class="author__publishings">Published : <span class="author__publishings-nums">150</span> articles</p>
+                </div>
+            </div>
+        </article>
+        <article class="author swiper-slide">
+            <div class="author__img--container">
+                <a class="author__link" href="#"><img class="author__img" src="<?php echo get_theme_file_uri(); ?>/assets/images/author-image-ai-generated-by-me.webp" alt=""></a>
+            </div>
+            <div class="author__content--container">
+                <div>
+                    <p class="author__full-name "><a class="author__link" href="#">Alberto Jalapino</a></p>
+                    <p class="author__role">Associate Editor</p>
+                    <p class="author__publishings">Published : <span class="author__publishings-nums">150</span> articles</p>
+                </div>
+            </div>
+        </article>
+        <article class="author swiper-slide">
+            <div class="author__img--container">
+                <a class="author__link" href="#"><img class="author__img" src="<?php echo get_theme_file_uri(); ?>/assets/images/author-image-ai-generated-by-me.webp" alt=""></a>
+            </div>
+            <div class="author__content--container">
+                <div>
+                    <p class="author__full-name "><a class="author__link" href="#">Alberto Jalapino</a></p>
+                    <p class="author__role">Associate Editor</p>
+                    <p class="author__publishings">Published : <span class="author__publishings-nums">150</span> articles</p>
+                </div>
+            </div>
+        </article>
+        <article class="author swiper-slide">
+            <div class="author__img--container">
+                <a class="author__link" href="#"><img class="author__img" src="<?php echo get_theme_file_uri(); ?>/assets/images/author-image-ai-generated-by-me.webp" alt=""></a>
+            </div>
+            <div class="author__content--container">
+                <div>
+                    <p class="author__full-name "><a class="author__link" href="#">Alberto Jalapino</a></p>
+                    <p class="author__role">Associate Editor</p>
+                    <p class="author__publishings">Published : <span class="author__publishings-nums">150</span> articles</p>
+                </div>
+            </div>
+        </article>
+        <article class="author swiper-slide">
+            <div class="author__img--container">
+                <a class="author__link" href="#"><img class="author__img" src="<?php echo get_theme_file_uri(); ?>/assets/images/author-image-ai-generated-by-me.webp" alt=""></a>
+            </div>
+            <div class="author__content--container">
+                <div>
+                    <p class="author__full-name "><a class="author__link" href="#">Alberto Jalapino</a></p>
+                    <p class="author__role">Associate Editor</p>
+                    <p class="author__publishings">Published : <span class="author__publishings-nums">150</span> articles</p>
+                </div>
+            </div>
+        </article>
+        <article class="author swiper-slide">
+            <div class="author__img--container">
+                <a class="author__link" href="#"><img class="author__img" src="<?php echo get_theme_file_uri(); ?>/assets/images/author-image-ai-generated-by-me.webp" alt=""></a>
+            </div>
+            <div class="author__content--container">
+                <div>
+                    <p class="author__full-name "><a class="author__link" href="#">Alberto Jalapino</a></p>
+                    <p class="author__role">Associate Editor</p>
+                    <p class="author__publishings">Published : <span class="author__publishings-nums">150</span> articles</p>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="btn-container"><a href="#" class="cta--btn">See More Reviews &rarr;</a></div>
+
+    <div class="swiper-pagination"></div>
+</section>
+
+
 
 <?php get_footer();?>

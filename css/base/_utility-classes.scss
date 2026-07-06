@@ -28,3 +28,11 @@
 .color-invert{
   color: white;
 }
+.container--vertical{
+  display: flex;
+  flex-direction: column;
+}
+.container--horizontal{
+  display: flex;
+  
+}

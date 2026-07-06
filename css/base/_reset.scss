@@ -1,0 +1,94 @@
+@mixin atSmall {
+  @media (max-width: 530px) {
+    @content;
+  }
+}
+
+@mixin atSmallMedium {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+/* 1. Global Box-Sizing & Margin Stripping */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Smooth Scrolling & Text-Size Adjustments */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  margin: 0;
+}
+
+/* 3. Modern Full-Height Body Framework */
+body {
+  min-block-size: 100svh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+/* 4. Fluid & Responsive Media Defaults */
+img, picture, video, canvas, svg, embed, iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. Clean Typography & Heading Controls */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+ul {
+  list-style-type: none; /* Removes the bullet points */
+  padding: 0;            /* Removes default left padding indentation */
+  margin: 0;             /* Removes default browser margins */
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+/* 6. Form Element Font Inheritance */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 7. Interactive & Dynamic Fixes */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* 8. Accessible Anchor Targeting Spacer */
+// :target {
+//   scroll-margin-block: 2rem;
+// }

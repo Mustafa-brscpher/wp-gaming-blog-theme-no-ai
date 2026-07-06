@@ -1,0 +1,21 @@
+{
+  "name": "gaming-blog-theme",
+  "version": "1.0.0",
+  "description": "wordpress classic theme for personal learning project",
+  "license": "ISC",
+  "author": "Mustafa",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "dependencies": {
+    "sass": "^1.101.0",
+    "swiper": "^14.0.1"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^32.6.0"
+  }
+}

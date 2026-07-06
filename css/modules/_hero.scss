@@ -1,0 +1,35 @@
+@use '../base/_reset';
+@use '../base/_variables';
+@use '../base/_utility-classes';
+
+
+.hero{
+    width: 100%;
+    display: flex;
+    columns: 32px;
+    margin-top: 60px;
+    padding-inline: 64px;
+    column-gap: 32px;
+    @include reset.atSmallMedium {
+        margin-top: 80px;
+        flex-direction: column;
+        padding-inline: 16px;
+
+    }
+    &__col{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 32px 0;
+        &--popular{
+            flex: 3;
+        }
+        &--latest{
+            flex: 1;
+        }
+    }
+
+}
+
+

@@ -1,0 +1,146 @@
+@use '../base/_reset';
+@use '../base/_variables';
+@use '../base/_utility-classes';
+
+
+
+// BEM Styling Architecture
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding-inline: 64px;
+    background-color: variables.$surface-black;
+    z-index: 100000;
+    @include reset.atSmallMedium {
+        height: 80px;
+        padding-inline: 16px;
+    }
+    @include reset.atSmall {
+        padding-inline: 16px;
+        height: 80px;
+    }
+    &__inner {
+        // layout rules
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__logo {
+        // logo rules
+        display: inline-block;
+        svg {
+            width: 175px;
+            height: 39px;
+            display: block;
+
+            // Shrink proportionally on tablet and mobile viewports
+            @include reset.atSmallMedium {
+                width: 99px;
+                height: 22px;
+            }
+    }
+
+    }
+    &__controls{
+        display: flex;
+        column-gap: 64px;
+        @include utility-classes.typography(16px, 400, 1.5);
+        @include reset.atMedium {
+            background-color: variables.$surface-black;
+            position: fixed;
+            top: 80px; // Places it exactly at the bottom edge of the mobile header
+            left: 0;
+            width: 100%;
+            height: 50vh; // Spans 50% of the viewport height
+            display: none;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: end;
+            padding-inline: 16px;
+            @include utility-classes.typography(20px, 500, 1.5);
+
+        }
+        &--active{
+            display:flex;
+        }
+    }
+
+    // Toggle container holding both open/close buttons
+    &__menu-toggle {
+        display: none; // Visible on mobile and tablet by default
+        @include reset.atMedium {
+            display: inline-block;
+            position: relative;
+            z-index: 100000;
+        }
+
+    }
+
+    &__toggle-btn {
+
+        svg {
+            width: 24px;
+            height: 24px;
+            display: block;
+            stroke: white;
+            fill: white;
+        }
+        
+        // Shared button styles
+        
+        // &--open {
+        // // Open specific rules
+        // }
+        
+        // &--close {
+        // // Close specific rules
+        // }
+    }
+
+    &__nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 16px;
+        @include reset.atMedium {
+            flex-direction: column;
+            width: 100vw;
+        }
+
+    }
+    &__nav-list li{
+        @include reset.atMedium {
+            width: 100vw;
+        }
+    }
+
+    &__menu-item{
+        color: white;
+        @include reset.atMedium {
+            display: block;
+            width: 100%;
+            line-height: 40px;
+            text-align: right;
+            border-bottom: rgb(84, 84, 84) 1px solid;
+        }
+    }
+
+    &__search-btn {
+        // Search specific rules
+        @include reset.atMedium {
+            // display: none;
+        }
+    }
+}
+
+// Global utility state helper
+.hidden {
+  display: none !important;
+}

@@ -1,0 +1,75 @@
+@use '../base/_reset';
+@use '../base/_variables';
+@use '../base/_utility-classes';
+
+// 1. Core Swiper Styles
+@use "swiper/css"; 
+
+// 2. Optional Component Modules (Only import what you use)
+@use "swiper/css/navigation";
+@use "swiper/css/pagination";
+
+.strip{
+    width: 100%;    
+    padding: 64px;
+    background-color: rgb(255, 0, 0);
+    overflow-x: hidden;
+}
+
+// 3. Custom Variable Themes & Overrides
+$primary-slider-color: #000000;
+$slider-height: 400px;
+
+.strip-slider {
+  width: 100%;
+  height: auto; /* Changed from 400px to auto so content isn't clipped vertically */
+  border-radius: 12px;
+  overflow-y: hidden;
+  padding-inline: 32px;
+  padding-block: 64px;
+  background-color: azure;
+
+  .swiper-slide {
+    /* Keep this block clean or use only for dimensions if needed */
+    height: auto; 
+  }
+
+
+  .swiper-pagination-bullet-active {
+    background: $primary-slider-color;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $primary-slider-color;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+.btn-container{
+    margin-top: 32px;
+}
+.cta--btn{
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    
+}
+.filter--container{
+    display: flex;
+    margin-bottom: 32px;
+    .filter__link{
+        padding: 8px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+    }
+    .filter__link:last-child{
+        border: 1px solid black;
+    }
+    
+}

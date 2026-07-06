@@ -89,7 +89,6 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.strip-slider
   direction: "horizontal",
   loop: false,
   slidesPerView: 'auto',
-  // Allows your card--vertical 300px width to dictate sizing
   spaceBetween: 32,
   pagination: {
     el: '.swiper-pagination',

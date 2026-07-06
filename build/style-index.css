@@ -986,5 +986,68 @@ textarea {
 .author__publishings {
   text-align: center;
 }
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  padding: 32px 64px;
+}
+.footer__inner {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  justify-content: space-between;
+}
+.footer__copy {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.fnav {
+  display: flex;
+  column-gap: 32px;
+}
+.fnav__logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fnav__logo {
+  display: inline-block;
+}
+.fnav__logo svg {
+  width: 175px;
+  height: 39px;
+  display: block;
+}
+@media (max-width: 767px) {
+  .fnav__logo svg {
+    width: 99px;
+    height: 22px;
+  }
+}
+.fnav__list--container {
+  display: flex;
+  flex-direction: column;
+}
+.fnav__heading {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.fnav__links {
+  margin-inline-start: 16px;
+}
+.fnav__link {
+  color: white;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
 
 /*# sourceMappingURL=style-index.css.map*/

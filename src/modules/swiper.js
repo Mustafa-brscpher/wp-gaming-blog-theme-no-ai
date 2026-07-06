@@ -5,7 +5,7 @@ const swiper = new Swiper('.strip-slider', {
   modules: [Navigation, Pagination],
   direction:"horizontal",
   loop: false,
-  slidesPerView: 'auto', // Allows your card--vertical 300px width to dictate sizing
+  slidesPerView: 'auto', 
   spaceBetween: 32,
   
   pagination: {

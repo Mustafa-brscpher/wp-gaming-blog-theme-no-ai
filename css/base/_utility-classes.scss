@@ -1,7 +1,15 @@
 @use '_variables';
+@use '_reset';
 
 .hidden{
     display:none;
+}
+
+.margin-deffisit{
+  margin-bottom:variables.$header-height-pc;
+  @include reset.atSmallMedium {    
+    margin-bottom:variables.$header-height-mobile;
+  }
 }
 
 @mixin typography($size, $weight: 400, $line-height: 1.5, $font: variables.$font-primary) {

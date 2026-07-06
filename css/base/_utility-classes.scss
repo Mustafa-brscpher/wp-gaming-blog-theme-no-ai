@@ -5,10 +5,10 @@
     display:none;
 }
 
-.margin-deffisit{
-  margin-bottom:variables.$header-height-pc;
+.margin-defisit{
+  margin-top:variables.$header-height-pc;
   @include reset.atSmallMedium {    
-    margin-bottom:variables.$header-height-mobile;
+    margin-top:variables.$header-height-mobile;
   }
 }
 

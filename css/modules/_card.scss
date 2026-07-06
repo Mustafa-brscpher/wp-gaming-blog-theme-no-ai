@@ -30,6 +30,9 @@
         flex: 1;
     }
     &__content--container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         flex: 1;
         gap: 16px;
     }
@@ -39,10 +42,13 @@
     &__excerpt{
         @include utility-classes.typography(16px, 400, 1.5, variables.$font-primary)
     }
-    &__content--container{
+
+    &__big-content--container{
         display: flex;
+        flex: 1;
         flex-direction: column;
-        justify-content: space-between;
+        // justify-content: start;
+        row-gap: 16px;
     }
     &__category{
         @include utility-classes.typography(16px, 500, 1.5, variables.$font-primary);
@@ -52,11 +58,14 @@
         display: inline-block !important;
         align-self: flex-start; /* Forces the flex item to shrink to its content size */
     }
+    &__stats{
+        display: flex;
+        column-gap: 16px;
+    }
     &__comment--container{
         align-self: flex-start;
         display: flex;
         column-gap: 4px;
-        justify-content: space-between;
     }
     &__comment--num{
         @include utility-classes.typography(16px, 800, 1.5, variables.$font-primary);

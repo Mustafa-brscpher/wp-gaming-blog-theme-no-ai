@@ -66,6 +66,14 @@ textarea {
 .hidden {
   display: none;
 }
+.margin-defisit {
+  margin-top: 60px;
+}
+@media (max-width: 767px) {
+  .margin-defisit {
+    margin-top: 80px;
+  }
+}
 .section__heading {
   font-family: "Inter";
   font-size: 20px;
@@ -227,13 +235,11 @@ textarea {
   width: 100%;
   display: flex;
   columns: 32px;
-  margin-top: 60px;
   padding-inline: 64px;
   column-gap: 32px;
 }
 @media (max-width: 767px) {
   .hero {
-    margin-top: 80px;
     flex-direction: column;
     padding-inline: 16px;
   }
@@ -279,6 +285,9 @@ textarea {
   flex: 1;
 }
 .card__content--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 1;
   gap: 16px;
 }
@@ -294,10 +303,11 @@ textarea {
   font-weight: 400;
   line-height: 1.5;
 }
-.card__content--container {
+.card__big-content--container {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 16px;
 }
 .card__category {
   font-family: "Inter";
@@ -310,11 +320,14 @@ textarea {
   display: inline-block !important;
   align-self: flex-start; /* Forces the flex item to shrink to its content size */
 }
+.card__stats {
+  display: flex;
+  column-gap: 16px;
+}
 .card__comment--container {
   align-self: flex-start;
   display: flex;
   column-gap: 4px;
-  justify-content: space-between;
 }
 .card__comment--num {
   font-family: "Inter";
@@ -1070,6 +1083,72 @@ textarea {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+}
+.archive {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-inline: 64px;
+}
+@media (max-width: 767px) {
+  .archive {
+    padding-inline: 16px;
+  }
+}
+.archive {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.archive__posts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.banner {
+  background-color: #1a1a1b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 32px 64px;
+}
+@media (max-width: 767px) {
+  .banner {
+    padding-inline: 16px;
+  }
+}
+.banner__title {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.banner__description {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgb(131, 131, 131);
+}
+.pagination {
+  display: flex;
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .pagination {
+    flex-wrap: wrap;
+  }
+}
+.pagination__link {
+  padding: 8px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+.pagination__link:last-child {
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

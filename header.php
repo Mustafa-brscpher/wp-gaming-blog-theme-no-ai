@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
     <title>Gaming Blog Theme</title>
 </head>
-<body>
+<body class="margin-defisit">
     <header class="header">
         <div class="header__inner">
             <!-- Brand Logo -->

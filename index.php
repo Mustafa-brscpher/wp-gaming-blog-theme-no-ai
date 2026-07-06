@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<section class="hero margin-deffisit">
+<section class="hero">
     <div class="hero__col hero__col--popular">
         <h1 class="section__heading">Populare</h1>
         <div class="cards__container">

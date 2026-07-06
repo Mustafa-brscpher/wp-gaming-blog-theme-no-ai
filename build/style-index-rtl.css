@@ -946,6 +946,11 @@ textarea {
   display: flex;
   margin-bottom: 32px;
 }
+@media (max-width: 767px) {
+  .filter--container {
+    flex-wrap: wrap;
+  }
+}
 .filter--container .filter__link {
   padding: 8px;
   border-top: 1px solid black;
@@ -994,11 +999,22 @@ textarea {
   background-color: rgb(0, 0, 0);
   padding: 32px 64px;
 }
+@media (max-width: 767px) {
+  .footer {
+    padding-inline: 16px;
+  }
+}
 .footer__inner {
   display: flex;
   width: 100%;
   align-items: start;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .footer__inner {
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }
 .footer__copy {
   font-family: "Inter";
@@ -1009,6 +1025,12 @@ textarea {
 .fnav {
   display: flex;
   column-gap: 32px;
+}
+@media (max-width: 767px) {
+  .fnav {
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }
 .fnav__logo-container {
   display: flex;
